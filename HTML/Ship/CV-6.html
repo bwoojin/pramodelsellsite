@@ -3,6 +3,7 @@
     <head>
         <title>프팝</title>
         <link rel="stylesheet" href="../../CSS/SellWebSite.css" >
+        <script src="../../JS/AmountWarning.js"></script>
     </head>
     <body>
         <div id="all">
@@ -292,10 +293,10 @@
                                                         <span class="quantity">
                                                             <input id="quantity" name="quantity_opt[]" style value="1" type="text">
                                                             <a href="#none">
-                                                                <img src="https://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif" alt="수량증가" class="QuantityUp up">
+                                                                <img src="https://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif" alt="수량증가" class="QuantityUp up" onclick="amount_warning()">
                                                             </a>
                                                             <a href="#none">
-                                                                <img src="https://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif" alt="수량감소" class="QuantityDown down">
+                                                                <img src="https://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif" alt="수량감소" class="QuantityDown down" onclick="amount_warning()">
                                                             </a>
                                                         </span>
                                                     </td>
@@ -324,13 +325,13 @@
                                     </div>
                                     <div class="xans-element- xans-product xans-product-action">
                                         <div class="btnAtea">
-                                            <a href="https://open.kakao.com/o/sAdS9ukf" class="first" onclick="product_submit(1, '/exec/front/order/basket/', this)">
+                                            <a href="https://open.kakao.com/o/sAdS9ukf" class="first" >
                                                 <img src="../../Picture/판매자 문의.jpg" alt="판매자에게 문의">
                                             </a>
-                                            <a href="#none" class="first" onclick="product_submit(2, '/exec/front/order/basket/', this)">
+                                            <a href="#none" class="first">
                                                 <img src="../../Picture/장바구니 담기.jpg" alt="장바구니 담기">
                                             </a>
-                                            <a href="../../index.html" class="first" onclick="add_wishlist_nologin('/member/login.html', this);" class>
+                                            <a href="../../index.html" class="first">
                                                 <img src="../../Picture/쇼핑 계속하기_상품상세.jpg" alt="쇼핑 계속하기">
                                             </a>
                                         </div>
