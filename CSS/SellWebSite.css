@@ -585,22 +585,23 @@ tbody {
     display: block;
 }
 
-/*수량 안에*/
+/*수량 박스 */
 #totalProducts tbody td .quantity input {
     width: 22px;
-    height: 23px;
+    height: 22px;
     padding: 0 2px 0 3px;
     line-height: 23px;
     border: 1px solid #d4d8d9;
     border-radius: 3px 0 0 3px;
 }
 
+/*수량 증가*/
 #totalProducts tbody td .quantity .up {
     position: absolute;
     left: 28px;
     top: 0;
 }
-
+/*수량 감소*/
 #totalProducts tbody td .quantity .down {
     position: absolute;
     left: 28px;
@@ -750,7 +751,7 @@ tfoot {
 .xans-product-additional div.board > .btnArea {
     padding: 8px 19px 12px 0px;
     border: 1px solid #d7d5d5;
-    border-top: 0;
+    border-top: 1;
 }
 
 .xans-product-additional div.board .btnArea {
