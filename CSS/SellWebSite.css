@@ -783,8 +783,10 @@ img, fieldset {
     width: 189px;
 }
 
+/*상품 이름*/
 .xans-product-1 ul.prdList .name {
     text-align: left;
+    width: 185px;
 }
 
 .xans-product-1 .xans-product-listitem {
@@ -1273,13 +1275,13 @@ button{
 .xans-mall-faq ul.link li:first-child a {
     width: 100px;
 }
+
 /*이용안내 리스트 중 선택되지 않은 리스트*/
 .xans-mall-faq ul.link li a {
     display: block;
     width: 110px;
     height: 38px;
-    padding: 0 14.95px;
-    border-right: 1px solid brown;
+    padding: 0 15.434px;
     border-left: 1px solid brown;
     color: black;
     line-height: 38px;
