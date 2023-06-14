@@ -782,7 +782,7 @@ button{
 }
 
 /*******고객센터 카톡 문의*******/
-.inquary{
+.inquiry{
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -1105,7 +1105,6 @@ button{
 .xans-mall-faq ul.link li.selected a {
     position: relative;
     top: -1px;
-    margin: 0 0 -1px;
     border: 1px solid brown;
     color: #fff;
     font-weight: bold;
