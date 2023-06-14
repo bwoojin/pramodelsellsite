@@ -81,6 +81,11 @@ li {
     background: url(http://img.echosting.cafe24.com/skin/base_ko_KR/layout/ico_category1.gif) no-repeat 165px 17px;
 }
 
+ /*상품 카테고리 박스 내 마우스 올릴시 색깔 브라운으로 변경*/
+ .category_button:hover{
+    background: brown;
+    border-radius: 10px;
+}
 
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
     margin: 0;
@@ -312,7 +317,6 @@ li {
     margin: 0 1px;
 }
 
-
 .xans-product-action .btnAtea .btnArea_query ul.link li h2 {
     height: 40px;
     line-height: 30px;
@@ -387,13 +391,7 @@ li {
     margin-left: 0px;
 }
 
-/***************************************************************여기까지 봄******************************************************/
-
-.xans-product-detail .infoArea h3 span {
-    font-weight: normal;
-    font-size: 12px;
-}
-
+/*상품 상세설명 infoArea영역 table*/
 .xans-product-detail .infoArea table {
     border: 0;
     font-size: 11px;
@@ -402,38 +400,11 @@ li {
 
 table {
     width: 100%;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-table {
     border-collapse: separate;
-    text-indent: initial;
-    border-spacing: 2px;
+    border-spacing: 2px; 
 }
 
-caption {
-    display: none;
-}
-
-caption {
-    display: table-caption;
-    text-align: -webkit-center;
-}
-
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-
+/*상품 상세설명 infoArea영역 th 태그*/
 .xans-product-detail .infoArea th {
     font-weight: normal;
     color: #353535;
@@ -443,23 +414,30 @@ tr {
     vertical-align: top;
 }
 
+/*상품 상세설명 infoArea영역 td 태그*/
+.xans-product-detail .infoArea td {
+    padding: 4px 10px 5px 0;
+    vertical-align: top;
+}
+
+/*border를 0으로 설정해주어 테두리선이 안보이게 해주기*/
 th, td {
     border: 0;
     vertical-align: top;
 }
 
+/*총 상품금액(수량)에 대한 스타일시트*/
 strong {
     font-weight: bold;
     font-size: 16px;
 }
-/*여기까지*/
 
-
-/**********totalProducts*********/
+/*totalProducts(!수량을 선택해주세요 상자 영역)*/
 #totalProducts {
     margin: 21px 0 0;
 }
 
+/*totalProducts(!수량을 선택해주세요)*/
 #totalProducts .info {
     padding: 0 0 9px;
     font-size: 14px;
@@ -467,77 +445,30 @@ strong {
     line-height: 14px;
 }
 
+/*totalProducts(!수량을 선택해주세요)이미지 오른쪽 마진 5px*/
 #totalProducts .info img {
     margin: 0 5px 0 0;
 }
 
-img, fieldset {
-    border: none;
-    vertical-align: top;
-}
-
-#totalProducts table {
-    margin: 0;
-}
-
-colgroup {
-    display: table-column-group;
-}
-
-col {
-    display: table-column;
-}
-
-thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-
 #totalProducts thead th {
-    height: 0;
-    padding: 0;
     font-size: 0;
-    line-height: 0;
 }
 
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-/*상품 수량 옆 상품명*/
+/*totalProducts의 상품 수량 옆 상품명*/
 #totalProducts tbody tr:first-child td {
     border-top: 1px solid #9a9ba0;
     font-size: 13px;
-}
-
-#totalProducts tbody tr td:first-child {
     padding-left: 4px;
 }
 
+/*totalProducts의 tbody td태그*/
 #totalProducts tbody td {
     padding: 9px 0;
-    border-top: 1px solid #ebebeb;
     color: #353535;
     line-height: 20px;
-    vertical-align: middle;
-    word-wrap: break-word;
-    word-break: break-all;
 }
 
-.xans-product-detail .infoArea td {
-    padding: 4px 10px 5px 0;
-    vertical-align: top;
-}
-
+/*totalProducts의 quantity 클래스*/
 #totalProducts tbody td .quantity {
     display: inline-block;
     position: relative;
@@ -545,12 +476,7 @@ tbody {
     vertical-align: top;
 }
 
-.xans-product-detail .infoArea td .quantity {
-    position: relative;
-    display: block;
-}
-
-/*수량 박스 */
+/*수량 박스*/
 #totalProducts tbody td .quantity input {
     width: 22px;
     height: 22px;
@@ -570,7 +496,7 @@ tbody {
 #totalProducts tbody td .quantity .down {
     position: absolute;
     left: 28px;
-    top: 12px;
+    top: 11px;
 }
 
 #totalProducts tbody td img {
@@ -585,11 +511,6 @@ tbody {
     text-align: right;
 }
 
-.xans-product-detail .infoArea td input {
-    height: 22px;
-    color: #353535;
-}
-
 /*수량 글자*/
 input, select, textarea {
     font-size: 100%;
@@ -598,12 +519,7 @@ input, select, textarea {
     vertical-align: middle;
 }
 
-tfoot {
-    display: table-footer-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
+/*totalProduct의 tfoot td태그(총 상품금액 : 원)*/
 #totalProducts tfoot td {
     padding: 34px 9px 19px;
     border-top: 1px solid #9a9ba0;
@@ -612,10 +528,7 @@ tfoot {
     background: #fff;
 }
 
-#totalProducts tfoot td .total {
-    color: #000;
-}
-
+/*totalProduct의 tfoot td 가격부분*/
 #totalProducts tfoot td .total em {
     font-style: normal;
     font-size: 16px;
@@ -668,6 +581,7 @@ tfoot {
     background: #f0f2f2;
 }
 
+/*prdDetail 상품 cont*/
 .xans-product-additional .cont {
     padding: 27px 10px 46px 9px;
     color: black;
@@ -675,34 +589,38 @@ tfoot {
     font-size: 13px;
 }
 
+/*prdDetail 상품 cont h3태그*/
 .xans-product-additional .cont h3 {
     margin: 0 0 20px;
     color: #000;
     font-size: 18px;
 }
 
-/*********상품 cont 이미지 왼쪽 패딩*********/
+/*prdDetail 상품 cont 이미지 왼쪽 패딩*/
 .xans-product-additional .cont img{
     padding: 80px;
 }
+
 
 .xans-product-additional div.board {
     padding: 27px 0 46px;
     color: #353535;
     line-height: 18px;
 }
-/*board h3*/
+/*prdDetail 상품 board h3(상품사용후기,상품Q&A)*/
 .xans-product-additional div.board h3 {
     padding: 0 10px 0 9px;
     font-size: 18px;
     color: #000;
 }
-/*board desc*/
+
+/*prdDetail 상품 board desc*/
 .xans-product-additional div.board p.desc {
     padding: 0 10px 0 9px;
     font-size: 16px;
 }
-/*board nodata*/
+
+/*prdDetail 상품 board nodata(게시물이 없습니다)*/
 .xans-product-additional div.board p.nodata {
     margin: 15px 0 0;
     border: 1px solid #d7d5d5;
@@ -712,18 +630,20 @@ tfoot {
     line-height: 39px;
     text-align: center;
 }
-/*board btnArea*/
+
+/*prdDetail 상품 board btnArea(상품 문의,후기,모두보기)*/
 .xans-product-additional div.board > .btnArea {
     padding: 8px 19px 12px 0px;
     border: 1px solid #d7d5d5;
     border-top: 1;
 }
 
+/*prdDetail 상품 board btnArea(상품 문의,후기,모두보기) 오른쪽 정렬*/
 .xans-product-additional div.board .btnArea {
     text-align: right;
 }
 
-/**/
+/*prdDetail 상품 board btnArea 이미지 margin*/
 .xans-product-additional div.board .btnArea img {
     margin: 0 0 0 4px;
 }
@@ -733,19 +653,19 @@ img, fieldset {
     vertical-align: top;
 }
 
-
-
-/**/
+/*상품 상세설명 왼쪽 이미지 영역*/
 .xans-product-detail .imgArea .keyImg img {
     max-width: 344px;
     border: 1px solid #ececec;
     cursor: pointer;
 }
 
+/***********추천상품**********/
 .xans-product-1 {
     margin: 22px 0 0;
 }
 
+/*추천상품 h2 태그*/
 .xans-product-1 h2 {
     margin: 0 0 16px;
     font-weight: normal;
@@ -755,6 +675,7 @@ img, fieldset {
     text-align: center;
 }
 
+/*추천상품 ul.prdList*/
 .xans-product-1 ul.prdList {
     display: table;
     width: 100%;
@@ -772,7 +693,7 @@ img, fieldset {
     width: 20%;
 }
 
-
+/*추천상품 ul.prdList li.item (상품 한개의 리스트)*/
 .xans-product-1 ul.prdList li.item {
     display: inline-block;
     margin: 20px 0;
@@ -798,12 +719,13 @@ img, fieldset {
     width: 189px;
 }
 
-/*상품 이름*/
+/*상품리스트 이름 (예를 들어 M1151) 왼쪽 정렬*/
 .xans-product-1 ul.prdList .name {
     text-align: left;
     width: 185px;
 }
 
+/*xans-product-1 xans-product-listitem margin*/
 .xans-product-1 .xans-product-listitem {
     margin: 0;
     margin-top: 0px;
@@ -812,21 +734,18 @@ img, fieldset {
     margin-left: 0px;
 }
 
+/*제조사 판매가 왼쪽 정렬*/
 .xans-product-listitem li {
     text-align: left;
 }
 
+/*a태그*/
 a {
     text-decoration: none;
     color: #000;
 }
 
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
-}
-
+/*p태그*/
 p {
     display: block;
     margin-block-start: 1em;
@@ -835,73 +754,7 @@ p {
     margin-inline-end: 0px;
 }
 
-.xans-product-1 {
-    margin: 22px 0 0;
-    margin-top: 22px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-}
-
-ul ul {
-    list-style-type: circle;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-
-
-
-.xans-product-listnormal ul.prdList li.item {
-    display: inline-block;
-    margin: 20px 0 30px;
-    color: #838383;
-    vertical-align: top;
-}
-
-.xans-product-listnormal .prdImg {
-    position: relative;
-}
-
-.xans-product-listnormal ul.prdList li.item .box {
-    margin: 0 auto;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-}
-
-.xans-product-listnormal ul.prdList li.item {
-    display: inline-block;
-    margin: 20px 0 30px;
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    color: #838383;
-    vertical-align: top;
-    *display: inline;
-    *zoom: 1;
-}
-
-.xans-product-listnormal ul.prdList .chk {
-    display: block;
-    margin: 0 0 10px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    text-align: center;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
 /*********검색창********/
-input :-ms-input-placeholder{color: #a8a8a8;}
-input::-webkit-input-placeholder{color: #a8a8a8;}
-input::-moz-placeholder{color: #a8a8a8;}
-
 #searchbar{
     height: 40px;
     width: 178px;
@@ -973,10 +826,11 @@ button{
 }
 
 .address {
-    font-size: 13px; 
+    font-size: 15px; 
     color:black;
     line-height: 18px;
 }
+
 .address span {
     padding: 0 25px 0 0; 
 }
@@ -992,6 +846,7 @@ button{
     display: flex;
     flex-direction: row;
 }
+
 #footer .footer_long .footer_long_bar .footer_long_menu li{
     height: 36px;
 }
@@ -1002,7 +857,7 @@ button{
     background: brown;
     font-size: 17px;
     color: white;
-    padding-top: 7px;
+    padding-top: 5px;
     text-align: center;
     margin-left: 80px;
     margin-right: 30px;
@@ -1010,10 +865,6 @@ button{
 /*여기까지*/
 
 /**********이벤트창 스타일시트**********/
-.xans-board-listpackage-8 {
-    margin: 0 0 20px;
-}
-
 .xans-board-title .title {
     min-height: 30px;
     margin: 10px 0 20px;
@@ -1110,14 +961,6 @@ button{
     text-align: center;
 }
 
-.xans-order-basketpackage .xans-order-totalorder span.right {
-    position: absolute;
-    right: 0;
-}
-
-#void {
-    margin: 10px 0;
-}
 
 /*********장바구니 이용안내*********/
 .help {
@@ -1355,7 +1198,7 @@ body {
     margin-top: 200px;
 }
 
-/******회원가입 스타일시트*******/
+/********회원가입 스타일시트*********/
 body {
     width:100%;
     height:100%;
