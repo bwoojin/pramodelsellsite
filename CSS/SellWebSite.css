@@ -325,7 +325,7 @@ li {
     background-color:  #757575;
     letter-spacing: 1px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #757575;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -352,7 +352,7 @@ li {
     background-color:  #9a9ba0;
     letter-spacing: 1px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #9a9ba0;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
