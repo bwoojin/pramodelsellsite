@@ -65,7 +65,7 @@ li {
     list-style-type: none;
 }
 
-/***********sidebar************/
+/*******************sidebar******************/
 #sidebar{
     float: left;
     width: 180px;
@@ -203,7 +203,7 @@ li {
     list-style-type: none;
 }
 
-/*사이드바 계좌번호*/
+/*******************사이드바 계좌번호******************/
 .bankinfo {
     margin: 40px 0 20px;
     margin-top: 40px;
@@ -222,7 +222,7 @@ li {
     border-bottom-color: rgb(232, 232, 232);
 }
 
-/*사이드바 이미지 영역*/
+/******************사이드바 이미지 영역************/
 .banarea {
     margin: 20px 0 20px;
     margin-top: 20px;
@@ -246,7 +246,7 @@ li {
     width: 980px;
 }
 
-/*상품 상세설명의 상단 여백*/
+/*******상품 상세설명의 상단 여백*******/
 .xans-product-detail {
     position: relative;
     margin: 0 auto;
