@@ -1,16 +1,9 @@
 ﻿#all {
-    width: 1200px;
     margin: 40px auto;
     margin-top: 40px;
     margin-right: auto;
     margin-bottom: 40px;
     margin-left: auto;
-    border: 1px solid #ddd;
-    padding: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
 }
 
 /*********header********/
@@ -1084,6 +1077,7 @@ button{
 /********이용안내 스타일시트********/
 .xans-mall-faq ul.link {
     height: 38px;
+    width: 100%;
     margin: 30px 0 11px;
     border: 1px solid brown;
     border-bottom-color: brown;
@@ -1137,7 +1131,7 @@ button{
 .xans-mall-faq ul.link li a {
     display: block;
     width: 110px;
-    height: 38px;
+    height: 38%;
     padding: 0 15.434px;
     border-left: 1px solid brown;
     color: black;
