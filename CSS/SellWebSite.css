@@ -672,7 +672,6 @@ img, fieldset {
 .xans-product-1 ul.prdList {
     display: table;
     width: 100%;
-    min-width: 756px;
     margin: -20px 0 0;
     margin-top: -20px;
     margin-right: 0px;
@@ -1257,8 +1256,14 @@ body {
 }
 
 /***********************반응형*****************************/
-/* 모바일 화면*/
-@media screen and (max-width: 768px) {
+
+/*노트북과 태블릿 가로 : 1024px ~ 1279px
+태블릿 가로 : 768px ~ 1023px
+모바일 가로 & 태블릿 세로 : 480px ~ 767px
+모바일 : ~479px*/
+
+/*모바일 화면*/
+@media screen and (max-width: 480px) {
     #header .topArea{
         padding-top: 5%;
         padding-right: 0px;
@@ -1282,12 +1287,81 @@ body {
     #contents{
         float: left;
         width: 100vw;
-        margin-left: -5px;
+    }
+    #contents ul{
+        width: 100vw;
     }
     #contents .visual{
         display: none;
     }
-    .mobile_menu_button{
+}
+/*태블릿 화면*/
+@media (min-width: 480px) and (max-width: 768px) {
+    #header .topArea{
+        padding-top: 5%;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .topArea img{
+        top: 0px;
+        height: 90px;
+        margin-top: -5vh;
+        float: center;
+    }
+    #header .long_bar{
+        display: none;
+    }
+    #sidebar{
+        display: none;
+    }
+    #contents{
+        float: left;
+        width: 100vw;
+    }
+    #contents .visual{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #sidebar{
+        display: none;
+    }
+    #header .long_bar{
+        display: none;
+    }
+    #contents{
+        float: left;
+        width: 100vw;
+    }
+    #contents .visual{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1235px){
+    #sidebar{
+        display: none;
+    }
+    #contents{
+        float: left;
+        width: 100vw;
+    }
+    #contents .visual{
+        display: none;
+    }
+}
+  /* 데스크탑 화면*/
+  @media screen and (min-width: 1235px) {
+    
+}
+
+/*메뉴 버튼
+  .mobile_menu_button{
     display: block;
     width: 24px;
     height: 24px;
@@ -1295,9 +1369,4 @@ body {
     background: url(../Picture/MobileMenuButton.JPG) no-repeat center;
     background-size: contain;
     }
-}
-  
-  /* 데스크탑 화면*/
-  @media screen and (min-width: 769px) {
-    
-  }
+*/
