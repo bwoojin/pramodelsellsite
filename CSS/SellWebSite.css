@@ -1245,3 +1245,59 @@ body {
     font-size: 20px;
     
 }
+
+/*모바일 메뉴 버튼*/
+.mobile_menu_button{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../Picture/MobileMenuButton.JPG) no-repeat center;
+    background-size: contain;
+}
+
+/***********************반응형*****************************/
+/* 모바일 화면*/
+@media screen and (max-width: 768px) {
+    #header .topArea{
+        padding-top: 5%;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .topArea img{
+        top: 0px;
+        height: 90px;
+        margin-top: -5vh;
+        float: center;
+    }
+    #header .long_bar{
+        display: none;
+    }
+    #sidebar{
+        display: none;
+    }
+    #contents{
+        float: left;
+        width: 100vw;
+        margin-left: -5px;
+    }
+    #contents .visual{
+        display: none;
+    }
+    .mobile_menu_button{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../Picture/MobileMenuButton.JPG) no-repeat center;
+    background-size: contain;
+    }
+}
+  
+  /* 데스크탑 화면*/
+  @media screen and (min-width: 769px) {
+    
+  }
