@@ -1270,7 +1270,7 @@ body {
         padding-bottom: 0px;
         padding-left: 0px;
         margin-top: 0px;
-        width: 100%;
+        width: 100vw;
     }
     .topArea img{
         top: 0px;
@@ -1285,7 +1285,7 @@ body {
         display: none;
     }
     #contents{
-        float: left;
+        float: none;
         width: 100vw;
     }
     #contents ul{
@@ -1303,7 +1303,7 @@ body {
         padding-bottom: 0px;
         padding-left: 0px;
         margin-top: 0px;
-        width: 100%;
+        width: 100vw;
     }
     .topArea img{
         top: 0px;
