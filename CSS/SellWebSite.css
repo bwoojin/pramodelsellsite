@@ -644,6 +644,9 @@ input, select, textarea {
 img, fieldset {
     border: none;
     vertical-align: top;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 /*상품 상세설명 왼쪽 이미지 영역*/
@@ -708,7 +711,7 @@ img, fieldset {
 }
 
 .xans-product-1 ul.column5 li.item .box {
-    width: 189px;
+    width: 170px;
 }
 
 /*상품리스트 이름 (예를 들어 M1151) 왼쪽 정렬*/
@@ -1263,7 +1266,7 @@ body {
 모바일 : ~479px*/
 
 /*모바일 화면*/
-/*@media screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     #header .topArea{
         padding-top: 5%;
         padding-right: 0px;
@@ -1285,7 +1288,7 @@ body {
         display: none;
     }
     #contents{
-        float: none;
+        float: center;
         width: 100vw;
     }
     #contents ul{
@@ -1294,7 +1297,7 @@ body {
     #contents .visual{
         display: none;
     }
-}*/
+}
 /*태블릿 화면 모바일이라고가정*/
 @media screen and (max-width: 767px) {
     #header .topArea{
@@ -1319,7 +1322,10 @@ body {
     }
     #contents{
         float: left;
-        width: 100vw;
+        width: 100%;
+    }
+    .xans-product-1 ul.prdList li.item{
+        
     }
     #contents .visual{
         display: none;
