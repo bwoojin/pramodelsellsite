@@ -644,9 +644,6 @@ input, select, textarea {
 img, fieldset {
     border: none;
     vertical-align: top;
-    max-width: 100%;
-    width: auto;
-    height: auto;
 }
 
 /*상품 상세설명 왼쪽 이미지 영역*/
@@ -711,7 +708,7 @@ img, fieldset {
 }
 
 .xans-product-1 ul.column5 li.item .box {
-    width: 160px;
+    width: 189px;
 }
 
 /*상품리스트 이름 (예를 들어 M1151) 왼쪽 정렬*/
@@ -1265,106 +1262,7 @@ body {
 모바일 가로 & 태블릿 세로 : 480px ~ 767px
 모바일 : ~479px*/
 
-/*모바일 화면*/
-@media (min-width: 320px) and (max-width: 480px) {
-    #header .topArea{
-        padding-top: 5%;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        margin-top: 0px;
-        width: 100vw;
-    }
-    .topArea img{
-        top: 0px;
-        height: 90px;
-        margin-top: -5vh;
-        float: center;
-    }
-    #header .long_bar{
-        display: none;
-    }
-    #sidebar{
-        display: none;
-    }
-    #contents{
-        float: center;
-        width: 100vw;
-    }
-    #contents ul{
-        width: 100vw;
-    }
-    #contents .visual{
-        display: none;
-    }
-}
-/*태블릿 화면 모바일이라고가정*/
-@media screen and (max-width: 767px) {
-    #header .topArea{
-        padding-top: 5%;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        margin-top: 0px;
-        width: 100vw;
-    }
-    .topArea img{
-        top: 0px;
-        height: 90px;
-        margin-top: -5vh;
-        float: center;
-    }
-    #header .long_bar{
-        display: none;
-    }
-    #sidebar{
-        display: none;
-    }
-    #contents{
-        float: left;
-        width: 100%;
-    }
-    .xans-product-1 ul.prdList li.item{
-        
-    }
-    #contents .visual{
-        display: none;
-    }
-    
-}
 
-@media screen and (max-width: 1023px) {
-    #sidebar{
-        display: none;
-    }
-    #header .long_bar{
-        display: none;
-    }
-    #contents{
-        float: left;
-        width: 100vw;
-    }
-    #contents .visual{
-        display: none;
-    }
-}
-/*
-@media (min-width: 1024px) and (max-width: 1235px){
-    #sidebar{
-        display: none;
-    }
-    #contents{
-        float: left;
-        width: 100vw;
-    }
-    #contents .visual{
-        display: none;
-    }
-}*/
-  /* 데스크탑 화면*/
-  @media screen and (min-width: 1235px) {
-    
-}
 
 /*메뉴 버튼
   .mobile_menu_button{
