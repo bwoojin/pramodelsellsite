@@ -1,9 +1,16 @@
 ﻿#all {
+    width: 1200px;
     margin: 40px auto;
     margin-top: 40px;
     margin-right: auto;
     margin-bottom: 40px;
     margin-left: auto;
+    border: 1px solid #ddd;
+    padding: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
 }
 
 /*********header********/
@@ -15,7 +22,7 @@
     text-align: center;
 }
 
-/**********header menu(헤더 메뉴)***********/
+/***********header menu(헤더 메뉴)************/
 #header .long_bar {
     width: 100%;
     height: 36px;
@@ -58,7 +65,7 @@ li {
     list-style-type: none;
 }
 
-/*******************sidebar******************/
+/***********sidebar************/
 #sidebar{
     float: left;
     width: 180px;
@@ -117,7 +124,7 @@ div{
 }
 
 
-/*********상품 카테고리 제목*********/
+/*********상품 카테고리 제목***********/
 .xans-layout-category h2 { 
     height: 30px;
     text-align: center;
@@ -134,7 +141,7 @@ div{
     margin-left: 0px;
 }
 
-/*******고객센터,계좌번호 카테고리 제목********/
+/********고객센터,계좌번호 카테고리 제목*********/
 .xans-layout-info h2 { 
     height: 30px;
     text-align: center;
@@ -196,7 +203,7 @@ li {
     list-style-type: none;
 }
 
-/*******************사이드바 계좌번호******************/
+/*사이드바 계좌번호*/
 .bankinfo {
     margin: 40px 0 20px;
     margin-top: 40px;
@@ -215,7 +222,7 @@ li {
     border-bottom-color: rgb(232, 232, 232);
 }
 
-/******************사이드바 이미지 영역************/
+/*사이드바 이미지 영역*/
 .banarea {
     margin: 20px 0 20px;
     margin-top: 20px;
@@ -239,7 +246,7 @@ li {
     width: 980px;
 }
 
-/*******상품 상세설명의 상단 여백*******/
+/*상품 상세설명의 상단 여백*/
 .xans-product-detail {
     position: relative;
     margin: 0 auto;
@@ -251,7 +258,7 @@ li {
     padding: 0 0 0 540px;
 }
 
-/**************상품 상세설명의 왼쪽 이미지 영역*************/
+/***************상품 상세설명의 왼쪽 이미지 영역**************/
 .xans-product-detail .imgArea {
     float: left;
     width: 546px;
@@ -292,7 +299,7 @@ li {
     border: 1px solid #ececec;
     cursor: pointer;
 }
-/************여기까지 상품 상세설명 이미지 영역***********/
+/**************여기까지 상품 상세설명 이미지 영역****************/
 
 /******************상품 상세설명 infoArea*********************/
 .xans-product-detail .infoArea h3 {
@@ -672,6 +679,7 @@ img, fieldset {
 .xans-product-1 ul.prdList {
     display: table;
     width: 100%;
+    min-width: 756px;
     margin: -20px 0 0;
     margin-top: -20px;
     margin-right: 0px;
@@ -774,7 +782,7 @@ button{
 }
 
 /*******고객센터 카톡 문의*******/
-.inquiry{
+.inquary{
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -790,7 +798,7 @@ button{
     color: #000;
 }
 
-/**********footer**********/
+/**********footer***********/
 #footer {
     border-top: 1px solid #ddd;
 }
@@ -884,7 +892,7 @@ button{
     font-size: 14px;
 }
 
-/********장바구니 스타일시트******/
+/*********장바구니 스타일시트*******/
 .titleArea {
     min-height: 30px;
     margin: 10px 0 20px;
@@ -954,7 +962,7 @@ button{
 }
 
 
-/********장바구니 이용안내********/
+/*********장바구니 이용안내*********/
 .help {
     margin: 40px 0 0;
     border: 1px solid #d6d4d4;
@@ -1076,7 +1084,6 @@ button{
 /********이용안내 스타일시트********/
 .xans-mall-faq ul.link {
     height: 38px;
-    width: 100%;
     margin: 30px 0 11px;
     border: 1px solid brown;
     border-bottom-color: brown;
@@ -1098,6 +1105,7 @@ button{
 .xans-mall-faq ul.link li.selected a {
     position: relative;
     top: -1px;
+    margin: 0 0 -1px;
     border: 1px solid brown;
     color: #fff;
     font-weight: bold;
@@ -1130,7 +1138,7 @@ button{
 .xans-mall-faq ul.link li a {
     display: block;
     width: 110px;
-    height: 38%;
+    height: 38px;
     padding: 0 15.434px;
     border-left: 1px solid brown;
     color: black;
@@ -1244,113 +1252,3 @@ body {
     font-size: 20px;
     
 }
-
-/*모바일 메뉴 버튼*/
-.mobile_menu_button{
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin: 0 auto;
-    background: url(../Picture/MobileMenuButton.JPG) no-repeat center;
-    background-size: contain;
-}
-
-/***********************반응형*****************************/
-
-/*노트북과 태블릿 가로 : 1024px ~ 1279px
-태블릿 가로 : 768px ~ 1023px
-모바일 가로 & 태블릿 세로 : 480px ~ 767px
-모바일 : ~479px*/
-
-/*모바일 화면*/
-/*@media screen and (max-width: 390px) {
-    #header .topArea{
-        padding-top: 5%;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        margin-top: 0px;
-        width: 100vw;
-    }
-    .topArea img{
-        top: 0px;
-        height: 90px;
-        margin-top: -5vh;
-        float: center;
-    }
-    #header .long_bar{
-        display: none;
-    }
-    #sidebar{
-        display: none;
-    }
-    #contents{
-        float: none;
-        width: 100vw;
-    }
-    #contents ul{
-        width: 100vw;  
-    }
-    #contents .visual{
-        display: none;
-    }
-}*/
-/*태블릿 화면*/
-/*@media screen and (max-width: 1024px) {
-    #header .topArea{
-        padding-top: 5%;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        margin-top: 0px;
-        width: 100vw;
-    }
-    .topArea img{
-        top: 0px;
-        height: 90px;
-        margin-top: -5vh;
-        float: center;
-    }
-    #header .long_bar{
-        display: none;
-    }
-    #sidebar{
-        display: none;
-    }
-    #contents{
-        float: left;
-        width: 100vw;
-    }
-    #contents .visual{
-        display: none;
-    }
-    
-}*/
-
-/*@media (min-width: 1024px) and (max-width: 1235px){
-    #sidebar{
-        display: none;
-    }
-    #contents{
-        float: left;
-        width: 100vw;
-    }
-    #contents .visual{
-        display: none;
-    }
-}*/
-  /* 데스크탑 화면*/
-  /*@media screen and (min-width: 1235px) {
-    
-}*/
-
-/*메뉴 버튼
-  .mobile_menu_button{
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin: 0 auto;
-    background: url(../Picture/MobileMenuButton.JPG) no-repeat center;
-    background-size: contain;
-    }
-*/
