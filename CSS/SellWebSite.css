@@ -72,6 +72,50 @@ li {
     
 }
 
+/*********검색창********/
+#searchbar{
+    height: 40px;
+    width: 178px;
+    border: 1px solid brown;
+    background: #ffffff;
+}
+
+input{
+    font-size: 16px;
+    width: 100px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+button{
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    background: brown;
+    outline: none;
+    float: right;
+    color: #ffffff;
+}
+
+/*******고객센터 카톡 문의*******/
+.inquary{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.kakaotalkIcon{
+    vertical-align: middle;
+}
+
+.kakaotalkText{
+    margin-left: 5px;
+    font-size:15px;
+    color: #000;
+}
+
 /*상품 카테고리 박스(탱크,비행기 등등)*/
 .xans-layout-category .position > ul > li > a {
     display: block;
@@ -754,49 +798,6 @@ p {
     margin-inline-end: 0px;
 }
 
-/*********검색창********/
-#searchbar{
-    height: 40px;
-    width: 178px;
-    border: 1px solid brown;
-    background: #ffffff;
-}
-
-input{
-    font-size: 16px;
-    width: 100px;
-    padding: 10px;
-    border: 0px;
-    outline: none;
-    float: left;
-}
-
-button{
-    width: 50px;
-    height: 100%;
-    border: 0px;
-    background: brown;
-    outline: none;
-    float: right;
-    color: #ffffff;
-}
-
-/*******고객센터 카톡 문의*******/
-.inquary{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.kakaotalkIcon{
-    vertical-align: middle;
-}
-
-.kakaotalkText{
-    margin-left: 5px;
-    font-size:15px;
-    color: #000;
-}
 
 /**********footer***********/
 #footer {
